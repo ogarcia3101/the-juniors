@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE JUNIORS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 70vh;
+            width: 100%;
+            background-image: url('https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2021/02/porsche-taycan-instagram-2242403.jpg?tf=3840x');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Animación de entrada */
+        @keyframes slideFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: red;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: slideFromLeft 1.5s ease-out;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            /* El subrayado ha sido eliminado */
+        }
+
+        /* Estilos para la sección de servicios */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px;
+            color: white;
+        }
+
+        .service-card {
+            background: transparent;
+            color: white;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-content {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .service-content {
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-content img {
+            transform: scale(1.1);
+        }
+
+        .service-card:hover .service-content h3 {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            margin: 10px 0;
+            font-size: 1.8em;
+        }
+
+        .service-card p {
+            font-size: 1.1em;
+        }
+
+        /* Imagen de fondo detrás de las tarjetas */
+        .services-container {
+            background-image: url('https://img-b.udemycdn.com/course/240x135/996352_e7c2_3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>THE JUNIORS</h1>
+        <p>¡Los mejores y sin duda!</p>
+    </div>
+
+    <div class="services-container">
+        <div class="services">
+            <div class="service-card">
+                <div class="service-content">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX3fmLOKat0qlr1QCxdDmh79eqDl1mpQsf0oByS7f6Fdfx33Eh" alt="Mecánica Especializada">
+                    <h3>Mecánica Especializada</h3>
+                    <p>Servicio de diagnóstico y reparación de motores con la última tecnología.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <img src="https://via.placeholder.com/60?text=Amortiguador" alt="Amortiguadores">
+                    <h3>Amortiguadores</h3>
+                    <p>Reemplazo y reparación de amortiguadores para un manejo más seguro.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <img src="https://via.placeholder.com/60?text=Frenos" alt="Frenos">
+                    <h3>Frenos</h3>
+                    <p>Revisión y mantenimiento de frenos para mayor seguridad en la conducción.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <img src="https://via.placeholder.com/60?text=Suspension" alt="Suspensión">
+                    <h3>Suspensión</h3>
+                    <p>Servicios especializados en suspensión para una conducción cómoda y estable.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <img src="https://via.placeholder.com/60?text=Reparacion" alt="Mantenimiento Profesional">
+                    <h3>Mantenimiento Profesional</h3>
+                    <p>Realizamos el mantenimiento completo para mantener tu auto en óptimas condiciones.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <img src="https://via.placeholder.com/60?text=GPS" alt="GPS y Localización Satelital">
+                    <h3>GPS y Localización Satelital</h3>
+                    <p>Instalación y reparación de sistemas GPS para una mayor seguridad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
